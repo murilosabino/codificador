@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+    <body>
+        <header>
+            <h1>(De)Codificador de Mensagens</h1>
+        </header>
+
+        <main>
+            <h2>Digite sua mensagem:</h2><br>
+            <input id='textinho' type="text"><br>
+            
+            <h2>Escolha o formato:</h2><br>
+            <select name="linguagem" id="linguagem">
+                <option id='b64' value="base64">Base64</option>
+                <option id='cesar' value="cesar">Cifra de César</option>
+            </select>
+
+            <div id="qtdCesar" class='classCesar'>
+                <label for="qtd">Número incremento: </label>
+                <input id="baseCesar" name="qtd" type="number">
+            </div>
+
+            <br><h2>Escolha o processo:</h2><br>
+            <div id="radios">
+                <input id="radioCod" type="radio" name="radio">
+                <label for="radioCod">Codificar</label>
+                <input id="radioDecod" type="radio" name="radio">
+                <label for="radioDecod">Decodificar</label>
+            </div>
+            <div id="botoes"><br>
+                <button id="botao">Codificar</button>
+            </div>
+            <br><br>
+            <div id="resultado">
+                <p id='pResultado'></p>
+            </div>
+        </main>
+    <script src="script.js"></script>    
+    </body>
+</html>
